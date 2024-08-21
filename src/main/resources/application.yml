@@ -1,9 +1,15 @@
-spring :
+spring:
   datasource:
-    url : jdbc:mysql://localhost:3306/cloth
-    username : root
-    password : 1234
-
+    url: jdbc:mysql://localhost:3306/ecommerce
+    username: root
+    password: 1234
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
+management:
+  endpoints:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
