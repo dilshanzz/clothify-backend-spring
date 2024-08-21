@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+management:
+  endpoints:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
